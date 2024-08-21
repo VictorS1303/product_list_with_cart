@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Red+Hat+Text:400,600,700');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    user-select: none;
+}
+
+:root
+{
+    /* COLORS */
+
+    /* Body Colors */
+    --body-background-color: #f4edeb;
+    
+    /* Product Card Colors */
+    --add-to-cart-button-border-color: #1ea475;
+    --product-amount--text-color: #fcf9f7;
+    --product-card-label-color: #c9aea6;
+    --product-card-title-color: #260f08;
+    --button-background-color: #c73a0f;
+
+    /* Cart Colors */
+    --cart-delivery-info-background-color: #ad8985;
+    --product-total-amount-price-color: #87635a;
+
+    /* Radii */
+    --base-border-radius: 10px;
+}
+
+body
+{
+    font-family: 'Red Hat Text', sans-serif;
+    background-color: var(--body-background-color);
+}
+
+.product-name
+{
+    font-size: 16px;
+}
