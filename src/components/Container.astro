@@ -1,19 +1,47 @@
-<div class="grid-container">
-    <div class="product-overview"></div>
-    <div class="cart"></div>
+<div class="container main-container">
+    <div></div>
+    <div></div>
 </div>
 
-<style>
-.grid-container
-{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
 
-.product-overview
-{
-   border: 2px solid #333;
-   grid-column: span 2;
-}
+<style>
+    .container.main-container
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px; 
+        width: 100%;
+        height: auto;
+        border: none;
+    }
+
+    div
+    {
+        height: 100px;
+        width: 100%;
+        border: 2px solid #000;
+    }
+
+
+    @media screen and (min-width: 768px)
+    {
+        .container.main-container
+        {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px; 
+            width: 100%;
+        }
+
+        .container.main-container div:first-child
+        {
+            grid-column: span 2;
+        }
+
+        .container.main-container div:last-child
+        {
+            grid-column: span 1;
+        }
+
+    }
 </style>
