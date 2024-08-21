@@ -1,6 +1,8 @@
 ---
-import '../css/style.css'
 const {title} = Astro.props;
+
+import '../css/style.css'
+import Container from '../components/Container.astro'
 ---
 
 <!DOCTYPE html>
@@ -11,6 +13,6 @@ const {title} = Astro.props;
     <title>{title}</title>
 </head>
 <body>
-    
+    <Container />
 </body>
 </html>
